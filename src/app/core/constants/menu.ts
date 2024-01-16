@@ -27,6 +27,10 @@ export class Menu {
             { label: 'Two Steps', route: '/auth/two-steps' },
           ],
         },
+        {
+          label: 'Cesta',
+          route: '/cesta',
+        }
       ],
     },
     {
