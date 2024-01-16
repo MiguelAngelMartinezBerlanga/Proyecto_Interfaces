@@ -3,16 +3,16 @@ import { MenuItem } from '../models/menu.model';
 export class Menu {
   public static pages: MenuItem[] = [
     {
-      group: 'Base',
+      group: '¡Toda nuestra ropa!',
       separator: false,
       items: [
         {
           icon: 'assets/icons/heroicons/outline/chart-pie.svg',
-          label: 'Dashboard',
-          route: '/dashboard',
+          label: 'Mujer',
+          route: '/mujer',
           children: [
-            { label: 'Nfts', route: '/dashboard/nfts' },
-            { label: 'Podcast', route: '/dashboard/podcast' },
+            { label: 'Calzado', route: '/mujer/calzado' },
+            { label: 'Sudaderas', route: '/mujer/sudaderas' },
           ],
         },
         {
