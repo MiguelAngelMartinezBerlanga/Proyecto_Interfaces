@@ -1,23 +1,15 @@
-<h2>Cesta</h2>
+<h1 class="display-4">Cesta</h1>
 
 <div class="row">
-  <div class="col">
-    <countries-table [countries]="countries"></countries-table>
+  <div class="col-md-6">
+    <product-table></product-table>
+    <button class="mt-20 flex-none rounded-md bg-primary-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-primary-600">
+      Actualizar cesta
+  </button>
   </div>
-  <div class="col">
+  <div class="col-md-6 d-flex justify-content-center">
     <resumen-card></resumen-card>
   </div>
 </div>
 
-<button class="flex-none rounded-md bg-primary-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-primary-600">
-    Actualizar cesta
-</button>
 
-<div class="row">
-    <div class="col">
-        <!-- SearchBox -->
-        <shared-search-box
-          (onValue)="searchByCapital($event)"
-          placeholder="Buscar por capital"></shared-search-box>
-    </div>
-  </div>

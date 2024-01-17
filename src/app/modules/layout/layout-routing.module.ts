@@ -8,6 +8,11 @@ const routes: Routes = [
     component: LayoutComponent,
     loadChildren: () => import('../mujer/mujer.module').then((m) => m.MujerModule),
   },
+  {
+    path: 'cesta',
+    component: LayoutComponent,
+    loadChildren: () => import('../cesta/cesta.module').then((c) => c.CestaModule),  
+  },
   { path: '', redirectTo: 'mujer', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },
 ];

@@ -3,12 +3,8 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'product-table',
   templateUrl: './product-table.component.html',
-  styles: [
-    `img {
-      width: 150px;
-    }`
+  styleUrls: [
+    './product-table.component.css'
   ]
 })
-export class ProductTableComponent {
-
-}
+export class ProductTableComponent {}
