@@ -1,0 +1,30 @@
+<div *ngIf="esta === 4; else productos">
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="d-flex flex-column align-items-center">
+      <h1 class="display-4">No tienes productos en tu cesta.</h1>
+      <p class="lead">
+        Haga clic 
+        <a href="../../../mujer/" class="enlace">
+          aquí
+        </a> 
+        para continuar comprando.
+      </p>
+    </div>
+  </div>  
+</div>
+
+<ng-template #productos>
+  <h1 class="display-4">Cesta</h1>
+
+  <div class="row">
+  <div class="col-md-6">
+    <product-table></product-table>
+    <button class="mt-20 flex-none rounded-md bg-primary-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-primary-600">
+      Actualizar cesta
+  </button>
+  </div>
+  <div class="col-md-6 d-flex justify-content-center">
+    <resumen-card></resumen-card>
+  </div>
+  </div>
+</ng-template>
