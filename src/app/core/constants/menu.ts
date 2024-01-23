@@ -22,6 +22,18 @@ export class Menu {
           ],
         },
         {
+          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          label: 'Hombre',
+          route: '/hombres',
+          children: [
+            { label: 'calzado', route: '/hombres/calzado' },
+            { label: 'camisetas', route: '/hombres/camisetas' },
+            { label: 'chaquetas', route: '/hombres/chaquetas' },
+            { label: 'pantalones', route: '/hombres/pantalones' },
+            { label: 'sudaderas', route: '/hombres/sudaderas' },
+          ],
+        },
+        {
           icon: 'assets/icons/heroicons/outline/lock-closed.svg',
           label: 'Auth',
           route: '/auth',
@@ -36,7 +48,7 @@ export class Menu {
         {
           label: 'Cesta',
           route: '/cesta',
-        }
+        },
       ],
     },
     {

@@ -3,16 +3,15 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
 
-    selector: 'app-mujer',
-    templateUrl: './mujer.component.html',
+    selector: 'app-hombres',
+    templateUrl: './hombres.component.html',
     standalone: true,
     imports: [RouterOutlet],
 })
-export class MujerComponent implements OnInit {
 
- 
+export class HombresComponent implements OnInit {
+
   constructor() {}
 
   ngOnInit(): void {}
-
 }

@@ -11,7 +11,12 @@ const routes: Routes = [
   {
     path: 'cesta',
     component: LayoutComponent,
-    loadChildren: () => import('../cesta/cesta.module').then((c) => c.CestaModule),  
+    loadChildren: () => import('../cesta/cesta.module').then((c) => c.CestaModule),
+  },
+  {
+    path: 'hombres',
+    component: LayoutComponent,
+    loadChildren: () => import('../hombres/hombres.module').then((m) => m.HombresModule),
   },
   { path: '', redirectTo: 'mujer', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },

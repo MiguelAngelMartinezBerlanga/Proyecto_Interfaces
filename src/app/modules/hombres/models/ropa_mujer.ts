@@ -1,6 +1,5 @@
 
 export interface RopaMujer {
-
   id: number;
   title: string;
   last_bid?: number;
@@ -11,3 +10,4 @@ export interface RopaMujer {
   ending_in?: string;
   image: string;
 }
+
