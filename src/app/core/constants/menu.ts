@@ -7,12 +7,15 @@ export class Menu {
       separator: false,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
-          label: 'Dashboard',
-          route: '/dashboard',
+          // icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          label: 'Hombres',
+          route: '/hombres',
           children: [
-            { label: 'Nfts', route: '/dashboard/nfts' },
-            { label: 'Podcast', route: '/dashboard/podcast' },
+            { label: 'Calzado', route: '/hombres/calzado' },
+            { label: 'Pantalones', route: '/hombres/pantalones' },
+            { label: 'Sudaderas', route: '/hombres/sudaderas' },
+            { label: 'Camisetas', route: '/hombres/camisetas' },
+            { label: 'Chaquetas', route: '/hombres/chaquetas' },
           ],
         },
         {

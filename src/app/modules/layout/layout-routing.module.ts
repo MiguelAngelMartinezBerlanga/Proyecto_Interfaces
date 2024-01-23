@@ -4,11 +4,11 @@ import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: 'hombres',
     component: LayoutComponent,
-    loadChildren: () => import('../dashboard/dashboard.module').then((m) => m.DashboardModule),
+    loadChildren: () => import('../hombres/hombres.module').then((m) => m.HombresModule),
   },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: 'hombres', pathMatch: 'full' },
   { path: '**', redirectTo: 'error/404' },
 ];
 
