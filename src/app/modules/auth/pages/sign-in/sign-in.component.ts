@@ -22,6 +22,7 @@ export class SignInComponent implements OnInit {
   form!: FormGroup;
   submitted = false;
   passwordTextType!: boolean;
+  clicked: boolean = false;
 
   constructor(private readonly _formBuilder: FormBuilder, private readonly _router: Router) {}
 
@@ -50,5 +51,9 @@ export class SignInComponent implements OnInit {
     }
 
     this._router.navigate(['/']);
+  }
+
+  onClick() {
+    this.clicked = !this.clicked;
   }
 }

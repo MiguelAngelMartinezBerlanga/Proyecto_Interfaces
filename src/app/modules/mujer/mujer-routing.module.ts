@@ -8,6 +8,7 @@ import { CamisetasComponent } from './pages/camisetas/camisetas.component';
 import { ChaquetasComponent } from './pages/chaquetas/chaquetas.component';
 import { BañadoresBikinisComponent } from './pages/bañadores_bikinis/bañadores_bikinis.component';
 import { AbrigosComponent } from './pages/abrigos/abrigos.component';
+import { PantalonesComponent } from './pages/pantalones/pantalones.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
       { path: 'chaquetas', component: ChaquetasComponent },
       { path: 'bañadores_bikinis', component: BañadoresBikinisComponent },
       { path: 'abrigos', component: AbrigosComponent },
+      { path: 'pantalones', component: PantalonesComponent },
       { path: '**', redirectTo: 'error/404' },
     ],
   },

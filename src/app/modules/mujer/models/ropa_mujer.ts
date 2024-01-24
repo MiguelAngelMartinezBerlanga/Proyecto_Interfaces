@@ -1,4 +1,6 @@
+
 export interface RopaMujer {
+
   id: number;
   title: string;
   last_bid?: number;

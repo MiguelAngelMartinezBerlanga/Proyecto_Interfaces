@@ -22,68 +22,81 @@ export class Menu {
           ],
         },
         {
+          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          label: 'Hombre',
+          route: '/hombres',
+          children: [
+            { label: 'calzado', route: '/hombres/calzado' },
+            { label: 'camisetas', route: '/hombres/camisetas' },
+            { label: 'chaquetas', route: '/hombres/chaquetas' },
+            { label: 'pantalones', route: '/hombres/pantalones' },
+            { label: 'sudaderas', route: '/hombres/sudaderas' },
+          ],
+        },
+        {
           icon: 'assets/icons/heroicons/outline/lock-closed.svg',
-          label: 'Auth',
+          label: 'Autenticación',
           route: '/auth',
           children: [
-            { label: 'Sign up', route: '/auth/sign-up' },
-            { label: 'Sign in', route: '/auth/sign-in' },
-            { label: 'Forgot Password', route: '/auth/forgot-password' },
-            { label: 'New Password', route: '/auth/new-password' },
-            { label: 'Two Steps', route: '/auth/two-steps' },
+            { label: 'Registrarse', route: '/auth/sign-up' },
+            { label: 'Iniciar sesión', route: '/auth/sign-in' },
+            { label: 'Olvidé la contraseña', route: '/auth/forgot-password' },
+            { label: 'Nueva contraseña', route: '/auth/new-password' },
+            { label: 'Verificación en dos pasos', route: '/auth/two-steps' },
           ],
         },
         {
           label: 'Cesta',
           route: '/cesta',
-        }
+        },
       ],
     },
     {
-      group: 'Collaboration',
+      group: 'Marcas',
       separator: true,
       items: [
         {
           icon: 'assets/icons/heroicons/outline/download.svg',
-          label: 'Download',
+          label: 'Nike',
           route: '/download',
         },
         {
           icon: 'assets/icons/heroicons/outline/gift.svg',
-          label: 'Gift Card',
+          label: 'Adidas',
           route: '/gift',
         },
         {
           icon: 'assets/icons/heroicons/outline/users.svg',
-          label: 'Users',
+          label: 'Puma',
           route: '/users',
         },
       ],
     },
     {
-      group: 'Config',
+      group: 'Configuración',
       separator: false,
       items: [
         {
           icon: 'assets/icons/heroicons/outline/cog.svg',
-          label: 'Settings',
+          label: 'Ajustes',
           route: '/settings',
         },
         {
           icon: 'assets/icons/heroicons/outline/bell.svg',
-          label: 'Notifications',
-          route: '/gift',
+          label: 'Notificaciones',
+          route: '/notifications',
         },
-        {
-          icon: 'assets/icons/heroicons/outline/folder.svg',
-          label: 'Folders',
-          route: '/folders',
-          children: [
-            { label: 'Current Files', route: '/folders/current-files' },
-            { label: 'Downloads', route: '/folders/download' },
-            { label: 'Trash', route: '/folders/trash' },
-          ],
-        },
+        // Comenté las líneas que parecen estar incompletas o incorrectas
+        // {
+        //   icon: 'assets/icons/heroicons/outline/folder.svg',
+        //   label: 'Carpetas',
+        //   route: '/folders',
+        //   children: [
+        //     { label: 'Current Files', route: '/folders/current-files' },
+        //     { label: 'Downloads', route: '/folders/download' },
+        //     { label: 'Trash', route: '/folders/trash' },
+        //   ],
+        // },
       ],
     },
   ];
