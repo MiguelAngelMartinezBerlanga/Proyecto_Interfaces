@@ -5,12 +5,16 @@ import { ProductTableComponent } from './components/product-table/product-table.
 import { ProductsPageComponent } from './pages/products-cesta-page/products-cesta-page.component';
 import { ResumenCardComponent } from './components/resumen-card/resumen-card.component';
 import { CommonModule } from '@angular/common';
+import { EnvioPageComponent } from './pages/envio-page/envio-page.component';
+import { PagoPageComponent } from './pages/pago-page/pago-page.component';
 
 @NgModule({
     declarations: [
-        ResumenCardComponent,
+        EnvioPageComponent,
+        PagoPageComponent,
         ProductsPageComponent,
-        ProductTableComponent
+        ProductTableComponent,
+        ResumenCardComponent,
     ],
 
   imports: [

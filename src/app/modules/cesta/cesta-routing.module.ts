@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CestaComponent } from './cesta.component';
 import { ProductsPageComponent } from './pages/products-cesta-page/products-cesta-page.component';
+import { EnvioPageComponent } from './pages/envio-page/envio-page.component';
+import { PagoPageComponent } from './pages/pago-page/pago-page.component';
 
 const routes: Routes = [
   {
@@ -11,6 +13,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'products-cesta', pathMatch: 'full' },
       { path: 'products-cesta', component: ProductsPageComponent },
+      { path: 'envio', component: EnvioPageComponent },
+      { path: 'pago', component: PagoPageComponent },
       { path: '**', redirectTo: 'sign-in', pathMatch: 'full' },
     ],
   },

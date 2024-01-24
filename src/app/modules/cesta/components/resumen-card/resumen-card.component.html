@@ -1,88 +1,87 @@
-<div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+<div
+  class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
 
-    <!-- Resumen -->
-    <div class="mt-4 flex flex-1 flex-col justify-between space-y-2 sm:mr-6 md:mt-0">
-      <h1 class="text-3xl font-semibold text-gray-800 dark:text-night-50">Resumen</h1>
-      <hr>
-  
-      <!-- Estimación de envío e impuestos -->
-      <div>
-        <h2 class="text-lg font-semibold text-gray-800 dark:text-night-50">Estimación de Envío e Impuestos</h2>
-        <div class="mt-2">
-          <!-- País -->
-          <div class="mb-2">
-            <label for="country" class="block text-sm font-medium text-gray-700 dark:text-night-200">País</label>
-            <select id="country" name="country" class="mt-1 p-2 border rounded-md w-full">
-              <!-- Opciones de países -->
-              <option value="country1">País 1</option>
-              <option value="country2">País 2</option>
-              <!-- ... otras opciones ... -->
-            </select>
-          </div>
-  
-          <!-- Provincia -->
-          <div class="mb-2">
-            <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>
-            <select id="province" name="province" class="mt-1 p-2 border rounded-md w-full">
-              <!-- Opciones de provincias -->
-              <option value="province1">Provincia 1</option>
-              <option value="province2">Provincia 2</option>
-              <!-- ... otras opciones ... -->
-            </select>
-          </div>
-  
-          <!-- Código Postal -->
-          <div class="mb-2">
-            <label for="postalCode" class="block text-sm font-medium text-gray-700 dark:text-night-200">Código Postal</label>
-            <input type="text" id="postalCode" name="postalCode" class="mt-1 p-2 border rounded-md w-full">
-          </div>
-  
-          <!-- Recogida en tienda -->
-          <div class="mb-2">
-            <label for="storePickup" class="flex items-center">
-              <input type="checkbox" id="storePickup" name="storePickup" class="mr-2">
-              Recogida en Tienda
-            </label>
-          </div>
-  
-          <!-- ASM Envíos -->
-          <div class="mb-2">
-            <label for="asmShipping" class="flex items-center">
-              <input type="checkbox" id="asmShipping" name="asmShipping" class="mr-2">
-              ASM Envíos a América/Península
-            </label>
-            <!-- Precio dependiendo del país -->
-            <span class="text-xs font-semibold text-gray-500 dark:text-night-300">Precio dependiendo del país</span>
-          </div>
+  <!-- Resumen -->
+  <div class="mt-4 flex flex-1 flex-col justify-between space-y-2 sm:mr-6 md:mt-0">
+    <h1 class="text-3xl font-semibold text-gray-800 dark:text-night-50">Resumen</h1>
+    <hr>
+
+    <!-- Estimación de envío e impuestos -->
+    <div>
+      <h2 class="text-lg font-semibold text-gray-800 dark:text-night-50">Estimación de Envío e Impuestos</h2>
+      <div class="mt-2">
+        <!-- País -->
+        <div class="mb-2">
+          <label for="country" class="block text-sm font-medium text-gray-700 dark:text-night-200">País</label>
+          <select id="country" name="country" class="mt-1 p-2 border rounded-md w-full">
+            <!-- Opciones de países -->
+            <option value="country1">País 1</option>
+            <option value="country2">País 2</option>
+            <!-- ... otras opciones ... -->
+          </select>
         </div>
-        <hr>
-      </div>
-  
-      <!-- Subtotal e Impuestos -->
-      <div class="flex space-x-2">
-        <div class="flex flex-col">
-          <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Subtotal</span>
-          <!-- Valor del Subtotal -->
-          <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Subtotal €</span>
+
+        <!-- Provincia -->
+        <div class="mb-2">
+          <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>
+          <select id="province" name="province" class="mt-1 p-2 border rounded-md w-full">
+            <!-- Opciones de provincias -->
+            <option value="province1">Provincia 1</option>
+            <option value="province2">Provincia 2</option>
+            <!-- ... otras opciones ... -->
+          </select>
         </div>
-        <div class="flex flex-col">
-          <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Impuestos</span>
-          <!-- Valor de los Impuestos -->
-          <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Impuestos €</span>
+
+        <!-- Código Postal -->
+        <div class="mb-2">
+          <label for="postalCode" class="block text-sm font-medium text-gray-700 dark:text-night-200">Código
+            Postal</label>
+          <input type="text" id="postalCode" name="postalCode" class="mt-1 p-2 border rounded-md w-full">
         </div>
+
+
+        <!-- Recogida en tienda -->
+        <div class="mb-2">
+          <input type="radio" id="tienda" name="lugarRecogida" value="tienda">
+          <label for="tienda" class="ml-2">Recogida en Tienda</label>
+        </div>
+        <!-- ASM Envíos -->
+        <div class="mb-2">
+          <input type="radio" id="asm" name="lugarRecogida" value="asm">
+          <label for="asm" class="ml-2">ASM Envíos a América/Península</label>
+        </div>
+        <!-- Precio dependiendo del país -->
+        <span class="text-xs font-semibold text-gray-500 dark:text-night-300">Precio dependiendo del país</span>
       </div>
       <hr>
-  
-      <!-- Total -->
-      <div class="flex flex-col">
-        <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Total</span>
-        <!-- Valor Total -->
-        <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Total €</span>
-      </div>
-      <hr>
-  
-      <!-- Botón Realizar Pago -->
-      <button class="flex-none rounded-md bg-primary-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-primary-600">
-        Realizar Pago
-      </button>
     </div>
+
+    <!-- Subtotal e Impuestos -->
+    <div class="flex space-x-2">
+      <div class="flex flex-col">
+        <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Subtotal</span>
+        <!-- Valor del Subtotal -->
+        <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Subtotal €</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Impuestos</span>
+        <!-- Valor de los Impuestos -->
+        <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Impuestos €</span>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Total -->
+    <div class="flex flex-col">
+      <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Total</span>
+      <!-- Valor Total -->
+      <span class="text-lg font-semibold text-gray-900 dark:text-night-50">Total €</span>
+    </div>
+    <hr>
+
+    <!-- Botón Realizar Pago -->
+    <button [routerLink]="['../envio']"
+      class="flex-none rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
+      Realizar Pago
+    </button>
+  </div>
