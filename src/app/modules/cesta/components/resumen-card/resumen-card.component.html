@@ -15,22 +15,30 @@
           <label for="country" class="block text-sm font-medium text-gray-700 dark:text-night-200">País</label>
           <select id="country" name="country" class="mt-1 p-2 border rounded-md w-full">
             <!-- Opciones de países -->
-            <option value="country1">País 1</option>
-            <option value="country2">País 2</option>
+            <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
             <!-- ... otras opciones ... -->
           </select>
         </div>
 
         <!-- Provincia -->
-        <div class="mb-2">
-          <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>
-          <select id="province" name="province" class="mt-1 p-2 border rounded-md w-full">
-            <!-- Opciones de provincias -->
-            <option value="province1">Provincia 1</option>
-            <option value="province2">Provincia 2</option>
-            <!-- ... otras opciones ... -->
-          </select>
+        <div *ngIf="selectedCountry === 'España'; else inputField">
+          <div class="mb-2">
+            <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>
+            <select id="province" name="province" class="mt-1 p-2 border rounded-md w-full">
+              <!-- Opciones de provincias -->
+              <option value="province1">Provincia 1</option>
+              <option value="province2">Provincia 2</option>
+              <!-- ... otras opciones ... -->
+            </select>
+          </div>
         </div>
+        
+        <ng-template #inputField>
+          <div class="mb-2">
+            <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>
+            <input type="text" id="province" name="province" class="mt-1 p-2 border rounded-md w-full">
+          </div>
+        </ng-template>
 
         <!-- Código Postal -->
         <div class="mb-2">

@@ -46,6 +46,7 @@ export class Menu {
           ],
         },
         {
+          icon: 'assets/icons/heroicons/outline/basket-ecommerce-shop-svgrepo-com.svg',
           label: 'Cesta',
           route: '/cesta',
         },
