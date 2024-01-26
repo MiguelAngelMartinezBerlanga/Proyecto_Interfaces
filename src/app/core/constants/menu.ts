@@ -7,7 +7,7 @@ export class Menu {
       separator: false,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          icon: 'assets/icons/heroicons/outline/women.svg',  
           label: 'Mujer',
           route: '/mujer',
           children: [
@@ -22,27 +22,15 @@ export class Menu {
           ],
         },
         {
-          icon: 'assets/icons/heroicons/outline/chart-pie.svg',
+          icon: 'assets/icons/heroicons/outline/standing-up-man.svg', 
           label: 'Hombre',
           route: '/hombres',
           children: [
-            { label: 'calzado', route: '/hombres/calzado' },
-            { label: 'camisetas', route: '/hombres/camisetas' },
-            { label: 'chaquetas', route: '/hombres/chaquetas' },
-            { label: 'pantalones', route: '/hombres/pantalones' },
-            { label: 'sudaderas', route: '/hombres/sudaderas' },
-          ],
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/lock-closed.svg',
-          label: 'Autenticación',
-          route: '/auth',
-          children: [
-            { label: 'Registrarse', route: '/auth/sign-up' },
-            { label: 'Iniciar sesión', route: '/auth/sign-in' },
-            { label: 'Olvidé la contraseña', route: '/auth/forgot-password' },
-            { label: 'Nueva contraseña', route: '/auth/new-password' },
-            { label: 'Verificación en dos pasos', route: '/auth/two-steps' },
+            { label: 'Calzado', route: '/hombres/calzado' },
+            { label: 'Camisetas', route: '/hombres/camisetas' },
+            { label: 'Chaquetas', route: '/hombres/chaquetas' },
+            { label: 'Pantalones', route: '/hombres/pantalones' },
+            { label: 'Sudaderas', route: '/hombres/sudaderas' },
           ],
         },
         {
@@ -50,6 +38,25 @@ export class Menu {
           label: 'Cesta',
           route: '/cesta',
         },
+      ],
+    },
+    {
+  
+      group: 'Credenciales de usuario',
+      separator: true,
+      items: [
+        {
+        icon: 'assets/icons/heroicons/outline/password.svg',  
+        label: 'Autenticación',
+        route: '/auth',
+        children: [
+        { label: 'Registrarse', route: '/auth/sign-up' },
+        { label: 'Iniciar sesión', route: '/auth/sign-in' },
+        { label: 'Olvidé la contraseña', route: '/auth/forgot-password' },
+        { label: 'Nueva contraseña', route: '/auth/new-password' },
+        { label: 'Verificación en dos pasos', route: '/auth/two-steps' },
+        ],
+      }
       ],
     },
     {
