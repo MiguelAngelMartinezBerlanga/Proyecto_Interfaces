@@ -81,9 +81,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      poppins: ['Poppins', 'system-ui', 'sans-serif'],
+      bebasNeue: ['Bebas Neue', 'sans-serif'],
       nunito: ['Nunito Sans', 'sans-serif'],
     },
+    
     container: {
       padding: {
         DEFAULT: '1rem',
