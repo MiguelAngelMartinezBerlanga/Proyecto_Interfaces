@@ -1,0 +1,17 @@
+<div class="dropdown relative inline-block bg-yellow-500" *ngFor="let menu of menuService.pagesMenu">
+  <!-- Button -->
+  <button
+    [ngClass]="
+      menu.selected || menu.active
+        ? 'bg-yellow-500 text-black'
+        : 'text-black-600 hover:bg-yellow-100 hover:text-yellow-500 dark:text-black-600 dark:hover:bg-night-600 '
+    "
+    class="mr-2 inline-flex rounded-md px-3 py-2 text-sm font-medium">
+    <span>{{ menu.group }}</span>
+  </button>
+  <!-- Dropdown  -->
+  <div
+    class="dropdown-content absolute top-[100%] min-w-[200px] origin-top-left"
+    navbar-submenu
+    [submenu]="menu.items"></div>
+</div>
