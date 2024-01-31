@@ -14,7 +14,7 @@
             <option *ngFor="let country of countries" [value]="country" #countrySelected>{{ country }}</option>
           </select>
         </div>
-
+      
         <div *ngIf="selectedCountry === 'España'; else inputField">
           <div class="mb-2">
             <label for="province" class="block text-sm font-medium text-gray-700 dark:text-night-200">Provincia</label>

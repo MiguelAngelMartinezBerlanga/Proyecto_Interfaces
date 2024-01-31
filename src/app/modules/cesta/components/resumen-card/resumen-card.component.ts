@@ -20,7 +20,8 @@ export class ResumenCardComponent implements OnInit {
   place: string = '';
 
   emitValues() {
-    this.cestaService.setPlace(this.place)
+    this.cestaService.setCountry(this.selectedCountry)
     this.cestaService.setPostalCode(this.postalCode)
+    this.cestaService.setPlace(this.place)
   }
 }

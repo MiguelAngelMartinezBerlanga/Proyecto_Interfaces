@@ -5,17 +5,17 @@
 
   <div class="form-group mt-4">
     <label for="nombre">Dirección de email:</label>
-    <input type="text" id="email" name="email">
+    <input type="text" id="email" name="email" [(ngModel)]="email">
   </div>
 
   <div class="form-group mt-4">
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre">
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="name">
   </div>
 
   <div class="form-group mt-4">
     <label for="apellidos">Apellidos:</label>
-    <input type="text" id="apellidos" name="apellidos">
+    <input type="text" id="apellidos" name="apellidos" [(ngModel)]="surnames">
   </div>
 
   <div class="form-group mt-4">
@@ -25,24 +25,24 @@
 
   <div class="form-group mt-4">
     <label for="empresa">Dirección postal (Calle, Nº de casa, código postal):</label>
-    <input type="text" id="calle" name="calle">
-    <input class="mt-2 mb-2" type="text" id="casa" name="casa">
+    <input type="text" id="calle" name="calle" [(ngModel)]="street">
+    <input class="mt-2 mb-2" type="text" id="casa" name="casa" [(ngModel)]="house">
     <input type="text" id="codigo_postal" name="codigo_postal" [(ngModel)]="postalCode">
   </div>
 
   <div class="form-group mt-4">
     <label for="ciudad">Ciudad:</label>
-    <input type="text" id="empresa" name="empresa">
+    <input type="text" id="empresa" name="empresa" [(ngModel)]="city">
   </div>
 
   <div class="form-group mt-4">
     <label for="telefono">Número de teléfono:</label>
-    <input type="text" id="telefono" name="telefono">
+    <input type="text" id="telefono" name="telefono" [(ngModel)]="phone">
   </div>
 
   <div class="form-group mt-4">
     <label for="nie">NIE/CIF:</label>
-    <input type="text" id="nie" name="nie">
+    <input type="text" id="nie" name="nie" [(ngModel)]="nie">
   </div>
 
   <div class="form-group mt-4">
@@ -54,7 +54,7 @@
     </select>
 </div>
 
-  <button [routerLink]="['../pago']" routerLinkActive="router-link-active"
+  <button [routerLink]="['../pago']" routerLinkActive="router-link-active" (click)="emitValues()"
     class="flex-none mt-4 rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
     Continuarl al Pago
   </button>

@@ -7,12 +7,11 @@ import { CestaService } from '../../services/cesta.service';
     templateUrl: './envio-page.component.html',
 })
 export class EnvioPageComponent implements OnInit {
+  constructor(private cestaService : CestaService) {}
 
   place: string = '';
 
   postalCode: string = '';
-
-  constructor(private cestaService : CestaService) {}
 
   ngOnInit(): void {
     this.cestaService.place$.subscribe(value => {
@@ -22,5 +21,32 @@ export class EnvioPageComponent implements OnInit {
     this.cestaService.postalCode$.subscribe(value => {
       this.postalCode = value;
     })
+  }
+
+  email: string = '';
+
+  name: string = '';
+
+  surnames: string = '';
+
+  street: string = '';
+
+  house: string = '';
+
+  city: string = '';
+
+  phone: string = '';
+
+  nie: string = '';
+  
+  emitValues() {
+    this.cestaService.setEmail(this.email)
+    this.cestaService.setName(this.name)
+    this.cestaService.setSurnames(this.surnames)
+    this.cestaService.setStreet(this.street)
+    this.cestaService.setHouse(this.house)
+    this.cestaService.setCity(this.city)
+    this.cestaService.setPhone(this.phone)
+    this.cestaService.setNie(this.nie)
   }
 }
