@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { CestaRoutingModule } from './cesta-routing.module';
 import { ProductTableComponent } from './components/product-table/product-table.component';
@@ -7,6 +8,7 @@ import { ResumenCardComponent } from './components/resumen-card/resumen-card.com
 import { CommonModule } from '@angular/common';
 import { EnvioPageComponent } from './pages/envio-page/envio-page.component';
 import { PagoPageComponent } from './pages/pago-page/pago-page.component';
+import { CestaService } from './services/cesta.service';
 
 @NgModule({
     declarations: [
@@ -19,7 +21,11 @@ import { PagoPageComponent } from './pages/pago-page/pago-page.component';
 
   imports: [
     CestaRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule
     ],
+    providers: [
+      CestaService
+    ]
 })
 export class CestaModule {}

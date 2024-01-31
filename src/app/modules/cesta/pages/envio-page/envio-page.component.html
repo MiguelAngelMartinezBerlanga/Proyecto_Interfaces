@@ -27,7 +27,7 @@
     <label for="empresa">Dirección postal (Calle, Nº de casa, código postal):</label>
     <input type="text" id="calle" name="calle">
     <input class="mt-2 mb-2" type="text" id="casa" name="casa">
-    <input type="text" id="codigo_postal" name="codigo_postal">
+    <input type="text" id="codigo_postal" name="codigo_postal" [(ngModel)]="postalCode">
   </div>
 
   <div class="form-group mt-4">
@@ -49,50 +49,13 @@
     <label for="metodoEnvio" class="text-lg font-bold">Método de Envío:</label>
     <hr>
     <select class="mt-2" id="metodoEnvio" name="metodoEnvio">
-      <option value="recogida">Recogida en tienda</option>
-      <option value="envio">Envío a domicilio</option>
+      <option value="recogida" [attr.selected]="place === 'tienda' ? true : null">Recogida en tienda</option>
+      <option value="envio" [attr.selected]="place === 'asm' ? true : null">Envío a domicilio</option>
     </select>
-  </div>
+</div>
 
   <button [routerLink]="['../pago']" routerLinkActive="router-link-active"
     class="flex-none mt-4 rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
     Continuarl al Pago
   </button>
 </div>
-
-
-
-<!-- pagina.component.html -->
-
-<!-- <div class="container">
-    <h2>Dirección de Envío</h2>
-    
-    <form (submit)="continuarAlPago()">
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required [(ngModel)]="direccionEnvio.nombre">
-      </div>
-  
-      <div class="form-group">
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required [(ngModel)]="direccionEnvio.apellidos">
-      </div>
-  
-      <div class="form-group">
-        <label for="empresa">Empresa:</label>
-        <input type="text" id="empresa" name="empresa" [(ngModel)]="direccionEnvio.empresa">
-      </div> -->
-
-<!-- Agrega los demás campos de dirección de envío -->
-
-<!-- <div class="form-group">
-        <label for="metodoEnvio">Método de Envío:</label>
-        <select id="metodoEnvio" name="metodoEnvio" [(ngModel)]="direccionEnvio.metodoEnvio">
-          <option value="recogida">Recogida en tienda</option>
-          <option value="envio">Envío a domicilio</option>
-        </select>
-      </div>
-  
-      <button type="submit">Continuar al Pago</button>
-    </form>
-  </div> -->

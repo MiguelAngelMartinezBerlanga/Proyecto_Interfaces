@@ -64,17 +64,17 @@ export class Menu {
       separator: true,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/download.svg',
+          icon: 'assets/icons/heroicons/outline/nike2.svg',
           label: 'Nike',
           route: '/download',
         },
         {
-          icon: 'assets/icons/heroicons/outline/gift.svg',
+          icon: 'assets/icons/heroicons/outline/adidas.svg',
           label: 'Adidas',
           route: '/gift',
         },
         {
-          icon: 'assets/icons/heroicons/outline/users.svg',
+          icon: 'assets/icons/heroicons/outline/puma.svg',
           label: 'Puma',
           route: '/users',
         },
