@@ -1,19 +1,21 @@
 <div class="relative ml-3">
   <!-- Profile Button -->
-  <button
-    (click)="toggleMenu()"
-    class="relative flex rounded-full bg-gray-800 text-sm"
-    type="button"
-    aria-expanded="false"
-    aria-haspopup="true">
-    <span class="sr-only">Menú de Usuario</span>
-    <img
-      clickOutside
-      (clickOutside)="isMenuOpen = false"
-      class="h-9 w-9 rounded-md"
-      src="https://avatars.githubusercontent.com/u/12519008?v=4"
-      alt="" />
-  </button>
+  <!-- Profile Button -->
+<button
+(click)="toggleMenu()"
+class="relative flex rounded-full bg-gray-800 text-sm border-black" 
+type="button"
+aria-expanded="false"
+aria-haspopup="true">
+<span class="sr-only">Menú de Usuario</span>
+<img
+  clickOutside
+  (clickOutside)="isMenuOpen = false"
+  class="h-9 w-9 rounded-md"
+  src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_960_720.png"
+  alt="" />
+</button>
+
   <!-- Dropdown -->
   <div
     [ngClass]="
