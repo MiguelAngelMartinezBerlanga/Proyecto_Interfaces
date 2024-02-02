@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RopaMujer } from '../../models/ropa_mujer';
 import { NftAuctionsTableComponent } from '../../components/sudaderas/nft-auctions-table/nft-auctions-table.component';
 import { NftChartCardComponent } from '../../components/sudaderas/nft-chart-card/nft-chart-card.component';
-import { NftSingleCardComponent } from '../../components/sudaderas/nft-single-card/nft-single-card.component';
+import { NftSingleCardComponent } from '../../components/sudaderas/sudaderas-single-card/sudaderas-single-card.component';
 import { NftDualCardComponent } from '../../components/sudaderas/nft-dual-card/nft-dual-card.component';
-import { NftHeaderComponent } from '../../components/sudaderas/nft-header/nft-header.component';
+import { NftHeaderComponent } from '../../components/sudaderas/sudaderas-header/sudaderas-header.component';
 
 @Component({
     selector: 'app-pantalones',
