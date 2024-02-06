@@ -9,12 +9,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of products">
+    <tr *ngFor="let product of productsCesta">
       <td><img [src]="product.image"></td>
       <td>{{ product.title }}</td>
-      <td>{{ product.price | currency:'EUR':'symbol':'1.2-2' }}</td>
-      <td>cantidad</td>
-      <td>precio*cantidad</td>
+      <td class="w-32">{{ product.price }} €</td>
+      <td>{{ product.cantidad }}</td>
+      <td>{{ (product && product.cantidad && product.price) ? (product.cantidad * product.price) : '' }} €</td>
     </tr>
   </tbody>
 </table>

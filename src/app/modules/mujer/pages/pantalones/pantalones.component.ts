@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RopaMujer } from '../../models/ropa_mujer';
 
 @Component({
-    selector: 'app-pantalones',
+    selector: 'app-pantalones-mujer',
     templateUrl: './pantalones.component.html',
     standalone: true
 })

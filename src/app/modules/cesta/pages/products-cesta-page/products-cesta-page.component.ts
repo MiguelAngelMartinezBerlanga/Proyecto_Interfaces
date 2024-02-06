@@ -1,5 +1,7 @@
 
 import { Component, Input, OnInit } from '@angular/core';
+import { Producto } from 'src/app/shared/models/product';
+import { SharedService } from 'src/app/shared/services/shared.service';
 
 @Component({
     selector: 'cesta-products-page',
@@ -16,8 +18,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
   ngOnInit(): void {
-    this.esta = 3;
+    
   }
-  
-  public esta: number = 0; //Cambiar al tamaño de la lista de productos
+
+  constructor( private sharedService: SharedService) {}
+
+  get productsCesta(): Producto[] {
+    return this.sharedService.productsCesta;
+  } 
 }
