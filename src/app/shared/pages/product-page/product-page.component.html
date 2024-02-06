@@ -1,0 +1,35 @@
+<!-- <ng-template #loading>
+    <div class="alert alert-info text-center">
+      Espere por favor
+    </div>
+</ng-template> -->
+
+<div class="container">
+    <!-- <div *ngIf="product; else loading"> -->
+        <div class="row">
+            <div class="col-4">
+                <img [src]="product.image">
+            </div>
+            <div class="col">
+                <h1>{{ product.title }}</h1>
+                <hr>
+                <h3>Precio: 100</h3>
+                <hr>
+                <div class="form-group mt-4">
+                    <input type="number" id="cantidad" name="cantidad" [(ngModel)]="cantidad">
+                  </div>
+                <!-- <div class="number-box">
+                    <input type="number" [(ngModel)]="cantidad"/>
+                    <button
+                        class="mt-20 flex-none rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
+                        Añadir a la cesta
+                    </button>
+                </div> -->
+            </div>
+        </div>
+        <div class="row mt-100">
+            <p>Descripción:</p>
+        </div>
+    <!-- </div> -->
+</div>
+
