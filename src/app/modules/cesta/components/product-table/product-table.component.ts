@@ -7,4 +7,7 @@ import { Component, Input } from '@angular/core';
     './product-table.component.css'
   ]
 })
-export class ProductTableComponent {}
+export class ProductTableComponent {
+  // @Input()
+  // public products: Any [] = [];
+}
