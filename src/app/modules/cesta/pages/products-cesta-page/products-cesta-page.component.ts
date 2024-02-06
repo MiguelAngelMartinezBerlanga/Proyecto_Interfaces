@@ -12,7 +12,7 @@ import { SharedService } from 'src/app/shared/services/shared.service';
         }
     
       .enlace:hover {
-        color: green;
+        color: #ca8a04;
       }
     `],
 })

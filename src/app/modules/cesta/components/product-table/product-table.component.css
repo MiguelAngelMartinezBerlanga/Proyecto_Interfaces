@@ -8,6 +8,10 @@ table {
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
+
+  td {
+    vertical-align: middle;
+  }
   
   img {
     max-width: 150px; 

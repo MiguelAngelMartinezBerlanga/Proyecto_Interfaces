@@ -38,6 +38,8 @@ export class EnvioPageComponent implements OnInit {
   phone: string = '';
 
   nie: string = '';
+
+  showError = false;
   
   emitValues() {
     this.cestaService.setEmail(this.email)

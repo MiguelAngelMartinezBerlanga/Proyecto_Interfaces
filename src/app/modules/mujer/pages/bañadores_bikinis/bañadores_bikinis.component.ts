@@ -1,16 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { RopaMujer } from '../../models/ropa_mujer';
+import { ProductoHeaderComponent } from 'src/app/shared/components/product/product-header/product-header.component';
+import { ProductoSingleCardComponent } from 'src/app/shared/components/product/product-single-card/product-single-card.component';
+import { Producto } from 'src/app/shared/models/product';
 
 @Component({
     selector: 'app-bañadores_bikinis',
     templateUrl: './bañadores_bikinis.component.html',
-    standalone: true
+    standalone: true,
+    imports: [
+      ProductoHeaderComponent,
+      ProductoSingleCardComponent
+      
+  ]
 })
 export class BañadoresBikinisComponent implements OnInit {
-  ropa_mujer: Array<RopaMujer>;
+  product: Array<Producto>;
 
   constructor() {
-    this.ropa_mujer = [
+    this.product = [
       {
         id: 34356771,
         title: 'Girls of the Cartoon Universe',
@@ -23,11 +31,10 @@ export class BañadoresBikinisComponent implements OnInit {
         avatar: './assets/avatars/avt-01.jpg',
       },
       {
-        id: 34356772,
-        title: 'Pupaks',
-        price: 548.79,
-        last_bid: 0.35,
-        image: './assets/images/img-02.jpg',
+        id: 1,
+        title: 'Nike Panda',
+        price: 120,
+        image: './assets/images/pandaGris.png',
       },
       {
         id: 34356773,

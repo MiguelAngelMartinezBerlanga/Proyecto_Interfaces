@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { ProductoSingleCardComponent } from 'src/app/shared/components/product/product-single-card/product-single-card.component';
+import { ProductoHeaderComponent } from 'src/app/shared/components/product/product-header/product-header.component';
+import { Producto } from 'src/app/shared/models/product';
 
 
 @Component({
@@ -7,21 +10,42 @@ import { NgFor } from '@angular/common';
     templateUrl: './sudaderas.component.html',
     standalone: true,
     imports: [
-        NgFor,
-        
-    ],
+      ProductoHeaderComponent,
+      ProductoSingleCardComponent
+      
+  ],
 })
 export class SudaderasComponent {
+  product: Array<Producto>;
 
-  public listening = [
-    { title: "Podpah", subtitle: "podpah", image: "https://i.scdn.co/image/ab67656300005f1fda018f5c18ecebc5d3ff3b59" },
-    { title: "Inteligência Ltda.", subtitle: "Rogério Vilela", image: "https://i.scdn.co/image/ab67656300005f1f11bcdb0577b867bebbe167c0" },
-    { title: "Poddelas", subtitle: "poddelas", image: "https://i.scdn.co/image/ab67656300005f1f7816cf087d5372059d5242c1" },
-    { title: "Ticaracaticast", subtitle: "Ticaracaticast", image: "https://i.scdn.co/image/ab67656300005f1fbe52b62cd2456fdd6712a02e" },
-    { title: "Mau Acompanhado", subtitle: "Jovem Nerd", image: "https://i.scdn.co/image/ab67656300005f1f003ae3aeaf3c898e0124760b" },
-    { title: "Quem pode, POD", subtitle: "Giovanna Ewbank e Fernanda Paes Leme", image: "https://i.scdn.co/image/ab67656300005f1f16642a90f8b553557b7109c4" },
-    { title: "Bocadinhas", subtitle: "Lucas Inutilismo", image: "https://i.scdn.co/image/ab67656300005f1febb8be633fc89f1582dc18fe" },
-    { title: "Mauricio Meirelles Podcast", subtitle: "Maurício Meirelles", image: "https://i.scdn.co/image/ab67656300005f1f44f8f1506e01f4628cfd348e" },
-  ]
+  constructor() {
+    this.product = [
+      {
+        id: 34356771,
+        title: 'Girls of the Cartoon Universe',
+        creator: 'Jhon Doe',
+        instant_price: 4.2,
+        price: 187.47,
+        ending_in: '06h 52m 47s',
+        last_bid: 0.12,
+        image: './assets/images/img-01.jpg',
+        avatar: './assets/avatars/avt-01.jpg',
+      },
+      {
+        id: 1,
+        title: 'Nike Panda',
+        price: 120,
+        image: './assets/images/pandaGris.png',
+      },
+      {
+        id: 34356773,
+        title: 'Seeing Green collection',
+        price: 234.88,
+        last_bid: 0.15,
+        image: './assets/images/img-03.jpg',
+      },
+    ];
+  }
 
+  ngOnInit(): void {}
 }

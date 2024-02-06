@@ -20,8 +20,6 @@ export class ResumenCardComponent implements OnInit {
 
   place: string = '';
 
-  total: number = 0;
-
   emitValues() {
     this.cestaService.setCountry(this.selectedCountry)
     this.cestaService.setPostalCode(this.postalCode)
@@ -32,7 +30,16 @@ export class ResumenCardComponent implements OnInit {
     return this.sharedService.subtotal
   }
 
+  get total(): number {
+    return this.sharedService.total
+  }
+
+  get impuestos(): number {
+    return this.sharedService.impuestos
+  }
+
   ngOnInit(): void {
     this.sharedService.calcularSubtotal()
+    this.sharedService.calcularTotal()
   }
 }

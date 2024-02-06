@@ -20,7 +20,6 @@ export class EnvioCardComponent {
     nie: String = '';
     email: String = '';
     phone: String = '';
-    total: String = '';
 
     ngOnInit(): void {
         this.cestaService.country$.subscribe(value => {
@@ -67,4 +66,8 @@ export class EnvioCardComponent {
       get productsCesta(): Producto[] {
         return this.sharedService.productsCesta;
       } 
+
+      get total(): number {
+        return this.sharedService.total
+      }
 }
