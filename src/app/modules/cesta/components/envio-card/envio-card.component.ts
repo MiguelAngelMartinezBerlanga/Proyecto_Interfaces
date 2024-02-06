@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { CestaService } from '../../services/cesta.service';
+import { SharedService } from 'src/app/shared/services/shared.service';
+import { Producto } from 'src/app/shared/models/product';
 
 @Component({
   selector: 'envio-card',
   templateUrl: './envio-card.component.html',
 })
 export class EnvioCardComponent {
-    constructor(private cestaService: CestaService){}
+    constructor(private cestaService: CestaService, private sharedService: SharedService){}
 
     country: String = '';
     city: String = '';
@@ -61,4 +63,8 @@ export class EnvioCardComponent {
             this.phone = value;
         })
       }
+
+      get productsCesta(): Producto[] {
+        return this.sharedService.productsCesta;
+      } 
 }

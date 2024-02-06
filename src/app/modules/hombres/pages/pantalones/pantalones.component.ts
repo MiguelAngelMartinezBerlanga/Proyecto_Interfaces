@@ -6,7 +6,7 @@ import { PantalonesingleCardComponent } from '../../components/pantalones/pantal
 import { PantalonesHeaderComponent } from '../../components/pantalones/pantalones-header/pantalones-header.component';
 
 @Component({
-    selector: 'app-calzado',
+    selector: 'app-pantalones',
     templateUrl: './pantalones.component.html',
     standalone: true,
     imports: [

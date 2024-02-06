@@ -6,6 +6,7 @@ import { PantalonesComponent } from './pages/pantalones/pantalones.component';
 import { SudaderasComponent } from './pages/sudaderas/sudaderas.component';
 import { CamisetasComponent } from './pages/camisetas/camisetas.component';
 import { ChaquetasComponent } from './pages/chaquetas/chaquetas.component';
+import { ProductPageComponent } from 'src/app/shared/pages/product-page/product-page.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'sudaderas', component: SudaderasComponent },
       { path: 'camisetas', component: CamisetasComponent },
       { path: 'chaquetas', component: ChaquetasComponent },
+      { path: 'producto', component: ProductPageComponent },
       { path: '**', redirectTo: 'error/404' },
     ],
   },

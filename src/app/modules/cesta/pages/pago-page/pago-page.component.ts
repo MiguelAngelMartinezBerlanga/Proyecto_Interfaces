@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/shared/services/shared.service';
 
 @Component({
     selector: 'cesta-pago-page',
@@ -6,4 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PagoPageComponent implements OnInit {
   ngOnInit(): void {}
+
+  constructor(private sharedService: SharedService){}
+
+  clearList() {
+    this.sharedService.clearProducts();
+  }
 }
