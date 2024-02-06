@@ -25,12 +25,12 @@
 
         <!-- Child Menu -->
         <ng-template #childMenu let-sub="sub">
-          <a class="inline-block w-full cursor-pointer px-4 py-2 text-xs font-semibold">
+          <a class="inline-block w-full cursor-pointer px-4 py-2 text-xs font-semibold ">
             {{ sub.label }}
           </a>
           <button
             [ngClass]="{ hidden: !menuService.showSideBar, 'rotate-90': sub.expanded }"
-            class="flex items-center p-1 text-gray-400 transition-all duration-500 dark:text-night-400">
+            class="flex items-center p-1 text-gray-400 transition-all duration-500 dark:text-night-400 ">
             <svg-icon src="assets/icons/heroicons/solid/chevron-right.svg" [svgClass]="'h-5 w-5'"> </svg-icon>
           </button>
         </ng-template>

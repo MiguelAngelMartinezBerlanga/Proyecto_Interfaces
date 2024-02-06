@@ -1,10 +1,10 @@
-<div class="dropdown relative inline-block" *ngFor="let menu of menuService.pagesMenu">
+<div class="dropdown relative inline-block " *ngFor="let menu of menuService.pagesMenu">
   <!-- Button -->
   <button
     [ngClass]="
       menu.selected || menu.active
-        ? 'bg-black text-yellow-500'
-        : 'text-black-600 hover:bg-yellow-100 hover:text-yellow-500'
+        ? 'bg-black text-yellow-500 dark:text-white' 
+        : 'text-black-600 hover:bg-yellow-100 hover:text-yellow-500 dark:text-white dark:hover:bg-gray-400'
     "
     class="mr-2 inline-flex rounded-md px-3 py-2 text-sm font-medium">
     <span>{{ menu.group }}</span>
