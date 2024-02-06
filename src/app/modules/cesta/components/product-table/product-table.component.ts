@@ -10,9 +10,6 @@ import { Producto } from 'src/app/shared/models/product';
 })
 export class ProductTableComponent {
   // @Input()
-<<<<<<< HEAD
-  // public products: Any [] = [];
-=======
   // public products: Producto [] = [];
   products: Producto [] = [];
 
@@ -44,5 +41,4 @@ export class ProductTableComponent {
       },
     ];
   }
->>>>>>> 408ed086e691c6c96dc3bc5a42d205ee4bacfe25
 }
