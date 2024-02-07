@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { CestaService } from '../../services/cesta.service';
 import { SharedService } from 'src/app/shared/services/shared.service';
-import { Producto } from 'src/app/shared/models/product';
 @Component({
     selector: 'resumen-card',
     templateUrl: './resumen-card.component.html',

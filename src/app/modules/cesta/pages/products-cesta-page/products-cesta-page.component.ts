@@ -6,15 +6,6 @@ import { SharedService } from 'src/app/shared/services/shared.service';
 @Component({
     selector: 'cesta-products-page',
     templateUrl: './products-cesta-page.component.html',
-    styles:  [`
-      .enlace {
-        text-decoration: none;
-        }
-    
-      .enlace:hover {
-        color: #ca8a04;
-      }
-    `],
 })
 export class ProductsPageComponent implements OnInit {
   ngOnInit(): void {
