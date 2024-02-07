@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { RopaMujer } from '../../models/ropa_mujer';
 
-
-import { SudaderasSingleCardComponent } from '../../components/sudaderas/sudaderas-single-card/sudaderas-single-card.component';
-import { SudaderasHeaderComponent } from '../../components/sudaderas/sudaderas-header/sudaderas-header.component';
+import { ProductoHeaderComponent } from 'src/app/shared/components/product/product-header/product-header.component';
+import { ProductoSingleCardComponent } from 'src/app/shared/components/product/product-single-card/product-single-card.component';
+import { Producto } from 'src/app/shared/models/product';
 
 @Component({
     selector: 'app-sudaderas',
     templateUrl: './sudaderas.component.html',
     standalone: true,
     imports: [
-      SudaderasHeaderComponent,
-        SudaderasSingleCardComponent,
-        
-    ],
+      ProductoHeaderComponent,
+      ProductoSingleCardComponent
+      
+  ],
 })
 export class SudaderasComponent implements OnInit {
-  calzado: Array<RopaMujer>;
+  product: Array<Producto>;
 
   constructor() {
-    this.calzado = [
+    this.product = [
       {
         id: 34356771,
         title: 'Girls of the Cartoon Universe',

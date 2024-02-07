@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 
-
 import { Producto } from 'src/app/shared/models/product';
 import { ProductoHeaderComponent } from 'src/app/shared/components/product/product-header/product-header.component';
 import { ProductoSingleCardComponent } from 'src/app/shared/components/product/product-single-card/product-single-card.component';

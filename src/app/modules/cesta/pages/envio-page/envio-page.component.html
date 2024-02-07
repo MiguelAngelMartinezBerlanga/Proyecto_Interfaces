@@ -5,7 +5,8 @@
 
   <div class="form-group mt-4">
     <label for="nombre">Dirección de email:</label>
-    <input type="text" id="email" name="email" [(ngModel)]="email">
+    <input type="text" id="email" name="email" [(ngModel)]="email" required>
+    <span *ngIf="showError" class="text-red-500 text-xs">El campo de correo electrónico es obligatorio</span>
   </div>
 
   <div class="form-group mt-4">
