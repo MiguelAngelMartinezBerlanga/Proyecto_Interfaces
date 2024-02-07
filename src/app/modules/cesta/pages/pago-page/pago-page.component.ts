@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Producto } from 'src/app/shared/models/product';
+
 import { SharedService } from 'src/app/shared/services/shared.service';
+
+import { Producto } from 'src/app/shared/models/product';
 
 @Component({
     selector: 'cesta-pago-page',

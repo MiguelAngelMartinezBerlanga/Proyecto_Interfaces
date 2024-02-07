@@ -1,12 +1,12 @@
 <div
-  class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+  class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 ">
 
   <div class="mt-4 flex flex-1 flex-col justify-between space-y-2 sm:mr-6 md:mt-0">
-    <h1 class="text-3xl font-semibold text-gray-800 dark:text-night-50">Resumen</h1>
+    <h1 class="text-3xl font-semibold text-gray-800 dark:text-night-300">Resumen</h1>
     <hr>
 
     <div>
-      <h2 class="text-lg font-semibold text-gray-800 dark:text-night-50">Estimación de Envío e Impuestos</h2>
+      <h2 class="text-lg font-semibold text-gray-800 dark:text-night-300">Estimación de Envío e Impuestos</h2>
       <div class="mt-2">
         <div class="mb-2">
           <label for="country" class="block text-sm font-medium text-gray-700 dark:text-night-200">País</label>
@@ -56,18 +56,18 @@
     <div class="flex justify-between space-x-2">
       <div class="flex flex-col">
         <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Subtotal</span>
-        <span class="text-lg font-semibold text-gray-900 dark:text-night-50">{{ subtotal }} €</span>
+        <span class="text-lg font-semibold text-gray-900 dark:text-night-300">{{ subtotal }} €</span>
       </div>
       <div class="flex flex-col">
         <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Impuestos</span>
-        <span class="text-lg font-semibold text-gray-900 dark:text-night-50">{{ (subtotal * impuestos) | number: '1.2-2' }} €</span>
+        <span class="text-lg font-semibold text-gray-900 dark:text-night-300">{{ (subtotal * impuestos) | number: '1.2-2' }} €</span>
       </div>
     </div>
     <hr>
 
     <div class="flex flex-col">
       <span class="text-sm font-semibold text-gray-400 dark:text-night-300">Total</span>
-      <span class="text-lg font-semibold text-gray-900 dark:text-night-50">{{ total | number: '1.2-2' }} €</span>
+      <span class="text-lg font-semibold text-gray-900 dark:text-night-300">{{ total | number: '1.2-2' }} €</span>
     </div>
     <hr>
 
@@ -76,3 +76,4 @@
       Realizar Pago
     </button>
   </div>
+  
