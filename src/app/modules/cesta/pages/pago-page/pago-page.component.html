@@ -47,7 +47,7 @@
   </div>
 </ng-template>
 
-<div *ngIf="productsCesta.length === 0; else realizarPago">
+<div *ngIf="productsCesta.length === 0 && !realizada; else realizarPago">
   <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="text-center">
       <h1 class="display-4">No tienes productos en tu cesta.</h1>
