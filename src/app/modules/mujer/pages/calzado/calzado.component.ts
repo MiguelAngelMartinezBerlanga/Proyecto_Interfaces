@@ -5,7 +5,7 @@ import { ProductoHeaderComponent } from 'src/app/shared/components/product/produ
 import { Producto } from 'src/app/shared/models/product';
 
 @Component({
-    selector: 'app-calzado',
+    selector: 'app-calzado-mujer',
     templateUrl: './calzado.component.html',
     standalone: true,
     imports: [

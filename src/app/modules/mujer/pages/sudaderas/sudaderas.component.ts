@@ -6,7 +6,7 @@ import { Producto } from 'src/app/shared/models/product';
 
 
 @Component({
-    selector: 'app-sudaderas',
+    selector: 'app-sudaderas-mujer',
     templateUrl: './sudaderas.component.html',
     standalone: true,
     imports: [

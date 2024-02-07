@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Producto } from 'src/app/shared/models/product';
 import { SharedService } from 'src/app/shared/services/shared.service';
 
 @Component({
@@ -27,6 +28,10 @@ export class PagoPageComponent implements OnInit {
   compraRealizada() {
     this.realizada = true;
   }
+
+  get productsCesta(): Producto[] {
+    return this.sharedService.productsCesta;
+  } 
 
   ngOnInit(): void {}
 }

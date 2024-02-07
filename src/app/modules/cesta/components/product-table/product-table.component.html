@@ -6,15 +6,20 @@
       <th>Precio</th>
       <th>Cantidad</th>
       <th>Subtotal</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of productsCesta">
+    <tr *ngFor="let product of productsCesta; let i = index">
       <td><img [src]="product.image"></td>
       <td>{{ product.title }}</td>
-      <td class="w-32">{{ product.price }} €</td>
+      <td>{{ product.price }} €</td>
       <td class="text-center">{{ product.cantidad }}</td>
       <td>{{ (product && product.cantidad && product.price) ? (product.cantidad * product.price) : '' }} €</td>
+      <td><button (click)="deleteProduct(i)"
+        class="flex-none rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
+        Eliminar
+      </button></td>
     </tr>
   </tbody>
 </table>

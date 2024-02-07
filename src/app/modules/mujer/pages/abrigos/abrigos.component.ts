@@ -5,7 +5,7 @@ import { ProductoSingleCardComponent } from 'src/app/shared/components/product/p
 import { Producto } from 'src/app/shared/models/product';
 
 @Component({
-    selector: 'app-abrigos',
+    selector: 'app-abrigos-mujer',
     templateUrl: './abrigos.component.html',
     standalone: true,
     imports: [

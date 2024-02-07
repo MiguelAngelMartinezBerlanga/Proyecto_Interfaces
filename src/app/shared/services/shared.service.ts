@@ -57,4 +57,11 @@ export class SharedService {
     get impuestos() {
         return this._impuestos
     }
+
+    deleteProducto(index: number) {
+        this._productsCesta.splice(index,1)
+
+        this.calcularSubtotal();
+        this.calcularTotal();
+    }
 }
