@@ -46,7 +46,7 @@ export class CamisetasComponent implements OnInit {
         title: 'Equipación del 12 FC Negreira',
         price: 99.99,
         image: './assets/images/cami_arbi.jpg',
-        description : 'El equipo que ayuda al FC Negreira',
+        description : 'El jugador que marca la diferencia',
         
       },
       {
@@ -66,7 +66,7 @@ export class CamisetasComponent implements OnInit {
       },
       {
         id: 18,
-        title: 'Equipación Patetico de Madrid',
+        title: 'Equipación Patético de Madrid',
         price: 0.1,
         image: './assets/images/cami_patetic.jpg',
         description : 'La vergüenza de madrid',
