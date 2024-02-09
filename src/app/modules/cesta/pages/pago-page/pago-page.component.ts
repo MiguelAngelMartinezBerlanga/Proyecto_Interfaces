@@ -20,15 +20,25 @@ import { Producto } from 'src/app/shared/models/product';
 export class PagoPageComponent implements OnInit {
   constructor(private sharedService: SharedService){}
 
+  metodoPago = ''
+
   realizada = false
 
+  mostrarMensaje = false
+
   clearList() {
-    this.sharedService.clearProducts();
-    this.realizada = false;
+    if(this.realizada) {
+      this.sharedService.clearProducts();
+      this.realizada = false;
+    } 
   }
 
   compraRealizada() {
-    this.realizada = true;
+    if(this.metodoPago != '') {
+      this.realizada = true;
+    } else {
+      this.mostrarMensaje = true;
+    }
   }
 
   get productsCesta(): Producto[] {
