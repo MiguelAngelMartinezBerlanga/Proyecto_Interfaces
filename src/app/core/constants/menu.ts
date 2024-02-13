@@ -11,9 +11,6 @@ export class Menu {
           label: 'Mujer',
           route: '/mujer',
           children: [
-            { label: 'Abrigos', route: '/mujer/abrigos' },
-            { label: 'Accesorios', route: '/mujer/accesorios' },
-            { label: 'Bañadores y Bikinis', route: '/mujer/bañadores_bikinis' },
             { label: 'Calzado', route: '/mujer/calzado' },
             { label: 'Camisetas', route: '/mujer/camisetas' },
             { label: 'Chaquetas', route: '/mujer/chaquetas' },

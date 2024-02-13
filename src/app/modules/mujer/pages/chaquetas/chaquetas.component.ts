@@ -20,28 +20,63 @@ export class ChaquetasComponent implements OnInit {
   constructor() {
     this.product = [
       {
-        id: 34356771,
-        title: 'Girls of the Cartoon Universe',
-        creator: 'Jhon Doe',
-        instant_price: 4.2,
-        price: 187.47,
-        ending_in: '06h 52m 47s',
-        last_bid: 0.12,
-        image: './assets/images/img-01.jpg',
-        avatar: './assets/avatars/avt-01.jpg',
-      },
-      {
         id: 1,
-        title: 'Nike Panda',
-        price: 120,
-        image: './assets/images/pandaGris.png',
+        title: 'Chaqueta Adidas larga',
+        price: 90,
+        image: './assets/images/mujer-chaqueta-adidas.jpg',
+        description : 'Para correr mas rápido',
       },
       {
-        id: 34356773,
-        title: 'Seeing Green collection',
+        id: 2,
+        title: 'Chaqueta Nike Blanca',
+        price: 120,
+        image: './assets/images/mujer-chaqueta-blanca.jpg',
+        description : 'Para correr mas rápido',
+      },
+      {
+        id: 3,
+        title: 'Chaqueta Nike negra',
         price: 234.88,
-        last_bid: 0.15,
-        image: './assets/images/img-03.jpg',
+        image: './assets/images/mujer-chaqueta-negra.jpg',
+        description : 'Para correr mas rápido',
+      },
+
+      {
+        id: 4,
+        title: 'Chaqueta Nike acolchada',
+        price: 1000.000000,
+        image: './assets/images/mujer-chaqueta-nike-acolchada.jpg',
+        description : 'Las llevo Jordan',
+        
+      },
+      {
+        id: 5,
+        title: 'Chaqueta Nike con estampado',
+        price: 170,
+        image: './assets/images/mujer-chaqueta-nike.jpg',
+        description : 'Para ir bien pretty',
+        
+      },
+      {
+        id: 6,
+        title: 'Chaqueta Puma marrón',
+        price: 99,
+        image: './assets/images/mujer-chaqueta-puma-marron.jpg',
+        description : 'Para ir bien pretty',
+      },
+      {
+        id: 7,
+        title: 'Chaqueta Puma naranja',
+        price: 99,
+        image: './assets/images/mujer-chaqueta-puma.jpg',
+        description : 'Para ir bien pretty',
+      },
+      {
+        id: 8,
+        title: 'Chaqueta Puma negra',
+        price: 99,
+        image: './assets/images/mujer-chaqueta-puma-negra.jpg',
+        description : 'Para ir bien pretty',
       },
     ];
   }
