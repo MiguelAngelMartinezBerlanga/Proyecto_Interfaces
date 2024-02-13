@@ -21,28 +21,63 @@ export class SudaderasComponent {
   constructor() {
     this.product = [
       {
-        id: 34356771,
-        title: 'Girls of the Cartoon Universe',
-        creator: 'Jhon Doe',
-        instant_price: 4.2,
-        price: 187.47,
-        ending_in: '06h 52m 47s',
-        last_bid: 0.12,
-        image: './assets/images/img-01.jpg',
-        avatar: './assets/avatars/avt-01.jpg',
-      },
-      {
         id: 1,
-        title: 'Nike Panda',
-        price: 120,
-        image: './assets/images/pandaGris.png',
+        title: 'Sudadera Nike bicolor',
+        price: 71.55,
+        image: './assets/images/sudadera-gris-negra-nike.jpg',
+        description : 'Para correr mas rápido',
       },
       {
-        id: 34356773,
-        title: 'Seeing Green collection',
-        price: 234.88,
-        last_bid: 0.15,
-        image: './assets/images/img-03.jpg',
+        id: 2,
+        title: 'Sudadera Nike rosa',
+        price: 38.78,
+        image: './assets/images/sudadera-nike-rosa.jpg',
+        description : 'Para correr mas rápido',
+      },
+      {
+        id: 3,
+        title: 'Sudadera Puma rosa',
+        price: 12.99,
+        image: './assets/images/sudadera-rosa-mujer.jpg',
+        description : 'Para correr mas rápido',
+      },
+
+      {
+        id: 4,
+        title: 'Sudadera Adidad top',
+        price: 20.99,
+        image: './assets/images/sudadera-top-adidas.jpg',
+        description : 'Las llevo Jordan',
+        
+      },
+      {
+        id: 5,
+        title: 'Sudadera Arsenal',
+        price: 19.99,
+        image: './assets/images/sudadera-arsenal.jpg',
+        description : 'Para ir bien pretty',
+        
+      },
+      {
+        id: 6,
+        title: 'Sudadera Nike sudadera',
+        price: 45.77,
+        image: './assets/images/sudadera-chaqueta-nike.jpg',
+        description : 'Para ir bien pretty',
+      },
+      {
+        id: 7,
+        title: 'Sudadera Adidas morada',
+        price: 45.78,
+        image: './assets/images/sudadera-deportiva.jpg',
+        description : 'Para ir bien pretty',
+      },
+      {
+        id: 8,
+        title: 'Sudadera Puma verde',
+        price: 34.99,
+        image: './assets/images/sudadera-verde-puma.jpg',
+        description : 'Para ir bien pretty',
       },
     ];
   }

@@ -3,18 +3,18 @@
     <div class="container mt-8 mb-8">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="text-2xl font-bold">Selecciona tu método de pago</h4>
+          <h4 class="text-2xl font-bold dark:text-night-50">Selecciona tu método de pago</h4>
 
           <hr class="mr-20">
 
           <div class="mt-4">
             <input type="radio" id="paypal" name="metodoPago" value="paypal" [(ngModel)]="metodoPago">
-            <label for="paypal" class="ml-2">PayPal</label>
+            <label for="paypal" class="ml-2 dark:text-night-50">PayPal</label>
           </div>
 
           <div class="mt-4">
             <input type="radio" id="tarjeta" name="metodoPago" value="tarjeta" [(ngModel)]="metodoPago">
-            <label for="tarjeta" class="ml-2">Tarjeta</label>
+            <label for="tarjeta" class="ml-2 dark:text-night-50">Tarjeta</label>
           </div>
 
           <div class="mt-4">
@@ -22,7 +22,7 @@
               class="rounded-md bg-yellow-500 px-4 py-2.5 text-xs font-semibold text-white hover:bg-yellow-600">
               Realizar Pago
             </button>
-            <div *ngIf="mostrarMensaje" class="text-danger mt-2">Debes seleccionar un método de pago</div>
+            <div *ngIf="mostrarMensaje" class="text-danger mt-2 dark:text-night-50">Debes seleccionar un método de pago</div>
           </div>
         </div>
         <div class="col-md-6 d-flex justify-content-center mt-4">
@@ -35,7 +35,7 @@
   <div *ngIf="realizada; else pago">
     <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
       <div class="text-center">
-        <h1 class="display-4">Compra realizada.</h1>
+        <h1 class="display-4 dark:text-night-50">Compra realizada.</h1>
         <p class="lead">
           Haga clic
           <a href="../../../mujer/" class="enlace">
