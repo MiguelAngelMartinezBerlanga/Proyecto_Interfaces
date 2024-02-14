@@ -5,8 +5,11 @@
     <!-- Logo -->
     <div class="relative h-10">
       <div class="flex items-center" *ngIf="menuService.showSideBar">
-        <a class="flex items-center justify-center rounded bg-primary-500 p-2 focus:outline-none focus:ring-1">
-          <svg-icon src="assets/icons/logo.svg"> </svg-icon>
+        <a class="flex items-center justify-center rounded focus:outline-none focus:ring-1">
+          <!-- bg-primary-500 p-2  -->
+          <!-- <svg-icon src="assets/icons/logo.svg"> </svg-icon> -->
+          <img src="assets/icons/icon-72x72.png" class="h-10 w-10" alt="logo">
+
         </a>
         <b class="ml-1 pl-2 text-sm font-bold dark:text-night-50">
           {{ appJson.displayName }}
